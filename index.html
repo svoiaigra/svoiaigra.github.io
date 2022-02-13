@@ -1,53 +1,346 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-<link rel="icon" type="img1.png" sizes="192x192" href="img1.png"> 
-<title>СВОЯ ИГРА</title>
-	<style>
-		.text{
-			
-			color: white;
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Своя Игра(Главная)</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
 
-			font-size: 50px;
-			margin-top: 10%;
-			border: 3px solid white;
-			border: 3px solid ;
-			background-color: #7292e1;
-			padding: 10px;
-			margin-left:39%;
-			display: flex;
-			position: fixed;
-	
-	
-	</style>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
-</head>
-<body>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+          margin: 0 auto;
+        }
 
 
-<div class="text"><p class="p">ДО РЕЛИЗА</p> </div>
+      #navbar ul{
+        display: none;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+      }
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 35px;
+        background-color: black;
+        padding-left: 25px;
+        min-width: 470px;
+      }
+      #navbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 23px;
 
-	  <div class="countdown">
-	  	<div class="time-section">
-	  		<span class="count" id="days"></span>
-	  		<span class="units">Дней</span>
-	  	</div>
-	  	<div class="time-section">
-	  		<span class="count" id="hours"></span>
-	  		<span class="units">Часов</span>
-	  	</div>
-	  	<div class="time-section">
-	  		<span class="count" id="minutes"></span>
-	  		<span class="units">Минут</span>
-	  	</div>
-	  	<div class="time-section">
-	  		<span class="count" id="seconds"></span>
-	  		<span class="units">Секунд</span>
-	  	</div>
-	  </div>
+      }
 
-</body>
-</html>
+      .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    .rgb{
+      width: 100%;
+      height: 500px;
+      background: linear-gradient(#ff0000, #9932cc) fixed;
+      box-shadow: 0 0 50px 3px rgba(202,113,68);
+      text-decoration: none;
+    }
+}
+
+abbr{
+  text-decoration: none;
+}
+
+    .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+.formnew{
+  background: #ebd2c3;
+  width: 70%;
+  border-radius: 10px
+
+}
+
+.avtorform{
+  padding-left:75%;
+}
+
+.forms{
+  text-decoration: none;
+  color: black;
+}
+.img1{
+  border-radius: 30px
+}
+
+.comment{
+  padding-left: 10px;
+}
+
+.name{
+  display: inline-block;
+   margin-left: 10px;
+}
+
+
+.formnew1{
+  background: #ebd2c3;
+  width: 70%;
+  border-radius: 10px;
+  height: 300px;
+overflow-y: scroll; /* прокрутка по горизонтали */
+}
+    </style>
+  </head>
+
+
+ 
+  <body >
+  <div class="sticky">
+  <img src="img1.png" width="50px" height="30" style="position: absolute; left: 1px; padding-left:2px; ">
+    <ul id="navbar">
+      <li><a style="position: relative; z-index: -1;">||||</a></li>
+       <li><a href="index.html">Главная</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="#">Контакты</a>
+        <ul>
+          <li><a href="https://chess.com/member/SusAmogus228">Создатель сайта</a></li>
+          <li><a href="https://www.chess.com/member/russian_mithrandir">Создатель клуба</a></li>
+          <li><a href="mailto:svoiaigra1@yandex.ru">Написать нам</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.chess.com/club/svoia-igra">Клуб</a></li> 
+    
+    </ul>
+ </div >
+   <br><div class="rgb">
+  <img src="index.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute; display: flex;left:500px;right:140px; top: 300px;"><img src="index.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute; display: flex;left:500px;right:140px; top: 300px;">
+  <img src="img10.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute; display: flex;left:1000px;right:140px; top: 330px;"><img id="logo" style="padding-left:200px; padding-top: 200px; margin: 0 auto;"  src="img1.png"> 
+  <img src="img9.png" id="pawn" class="Rook animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="120px" height="100px"style="position:absolute; display: flex;left:750px;right:140px; top: 150px;">
+
+  <br><a href="" style="padding-left: 230px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" ><abbr title="Само название клуба">"Своя игра"</abbr></a>
+  <br><a href="" style="padding-left: 340px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" >Турниры</a>
+   <br><a href="" style="padding-left: 430px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" >Турниры</a>
+
+
+
+
+
+
+
+   
+   </div >
+  <main>
+    <div>
+  
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Быстрый поиск</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="news.html">Новости</a>
+    <a href="forms.html">Форумы</a>
+    
+  </div>
+</div>
+<div class="formnew"><center><p style="font-size: 40px;">ВАЖНО ПРОЧИТАТЬ ПРАВЕЛА ВСЕМ УЧАСТНИКАМ КЛУБА</p></center></div><br>
+<center><div style="font-size: 19px;" class="formnew1">
+  <br><p>Дорогие друзья и гости моего клуба! Уважаемые любители шахмат! <br>
+
+Я считаю своим долгом проинформировать вас о случившимся. <br>
+
+Вот этот участник сайта:<br>
+
+  <a href=" https://www.chess.com/member/andrey150711">
+  https://www.chess.com/member/andrey150711</a> <br>
+
+<a href=" https://www.chess.com/member/andrey150711">@Andrey150711</a><br>
+
+ очень просил сделать его суперадмином, чтобы показать себя.<br>
+К сожалению, я поддался на уговоры. В результате Андрей удалил пользователей из клуба. <br>
+  Мне очень жаль что так получилось. Моей вины, это конечно, не снимает. Прошу прощения.<br>
+Я не хочу ещё раз кого-то подвести. <br>
+Поэтому, я обещаю, что больше ни кто и ни когда, не получит суперадминства. <br>
+
+ Андрей @Andrey150711 отправлен в чёрный список нашего клуба. Навсегда, обжалованию не подлежит.<br>
+ Фу, таким  быть! Стыд и позор.<br>
+Dear friends!<br>
+My club was hacked by this person:  <a href=" https://www.chess.com/member/andrey150711">
+  https://www.chess.com/member/andrey150711</a> <br>
+
+<a href=" https://www.chess.com/member/andrey150711">@Andrey150711</a><br>
+He asked to make him a superadmin in order to show himself.<br>
+As a result, he removed users from the club.<br>
+I'm very sorry that it happened. I beg your pardon.<br>
+I don't want to let anyone down again.<br>
+Therefore, I promise that no one else, and no when, will receive superadmin status<br>
+Andrey @ Andrey150711 was sent to the blacklist of our club. Forever, no appeal.<br>
+Welcome to the club: https://www.chess.com/club/svoia-igra<br>
+ 
+
+ 
+
+Добро пожаловать в клуб "Своя игра" ! Рад, что вы пришли!<br>
+
+Welcome to the club "Svoya igra "!<br>
+
+I'm glad you came!<br>
+
+Запрещён мат ,  оскорбления , разговоры о политике . Приветствуется товарищеская помощь .   <br>
+
+У нашего клуба теперь есть ВКонтакте  группа ! Постараюсь там выкладывать задачи на мат в 3 - 5 ходов что бы интересно было <a href="https://vk.com/club_svoia_igra"> https://vk.com/club_svoia_igra</a>
+
+Наш штаб: https://www.chess.com/club/glavnyi-shtab-kluba-svoia-igra<br>
+НАША ЦЕЛЬ: совершенство игры!<br>
+
+Цензор заметок: petrzakharov<br>
+
+Правила клуба: Параграф 1<br>
+МОЖНО И ДАЖЕ НУЖНО!  😀😀😀<br>
+1.Развивать клуб!<br>
+2.Принимать участие в матчах, турнирах, консультационных партиях и т. п.<br>
+И самое главное наслаждаться игрой в шахматы !<br>
+
+Параграф 2<br>
+Нельзя:<br>
+1.Читирить!,<br>
+2.материться!<br>
+3.нельзя рекламировать и спамить!<br>
+                                       СТРОГО ЗАПРЕЩЕННО!<br>
+Параграф 3<br>
+1. Разрушать клуб!<br>
+2.Удалять форумы и новости!<br>
+3.Удалять заметки без особых причин.<br>
+
+4. Рекламировать товары +18<br>
+
+                                           ЗА НАРУШЕНИЕ:<br>
+За нарушение 1 пункта 2 параграфа бан на день. За второе нарушение бан на неделю. За повторное нарушение бан на ДВЕ НЕДЕЛИ.<br>
+------------------------------------------------------------------------------<br>
+За нарушение 2 пункта 2 параграфа бан на ТРИ ДНЯ! За второе нарушение бан на неделю. За повторное нарушение бан на месяц.<br>
+------------------------------------------------------------------------------<br>
+За нарушение 3 пункта 2 параграфа бан на ДЕНЬ! За второе нарушение бан на НЕДЕЛЮ. За повторное нарушение бан на ДВЕ НЕДЕЛИ.<br>
+------------------------------------------------------------------------------<br>
+1 пункта 3 параграфа блокировка на 3 НЕДЕЛИ! За повторное нарушение бан пожизненно! При этом делается исключение из правила Q7. После данного нарушения человек может занять ТОЛЬКО должность координатора.<br>
+------------------------------------------------------------------------------<br>
+За нарушение пунктов 2 и 3 параграфа 3 бан на ДЕНЬ! За второе нарушение бан на НЕДЕЛЮ. За повторное нарушение бан на ДВЕ НЕДЕЛИ. 
+За нарушение четвёртого пункта третьего параграфа БАН И ИСКЛЮЧЕНИЕ ИЗ КЛУБА ПОЖИЗНЕННО!<br>
+
+=============================================<br>
+Правило Q7<br>
+ЕСЛИ ЧЕЛОВЕК ЗАНИМАЕТ ДОЛЖНОСТЬ АДМИНИСТРАТОРА, то после ТРЕТЬЕГО нарушения ОН ЛИШАЕТСЯ ДОЛЖНОСТИ ! ТО ЖЕ КАСАЕТСЯ КООРДИНАТОРОВ!<br>
+
+
+
+<br>
+ </p>
+</div></center><br>
+
+<div class="formnew"> <center><p>Аудио</p><br><br><p>AOT Oppening 2 сезон на русском</p><audio controls>
+<source src="aot.mp3"></audio><br><br><p>Честь шахматной короны</p><audio controls>
+<source src="nenaviszhy.mp3"></audio><br><br></div>
+<br><br>
+
+<div class="formnew">
+  <center><a  style="padding: 1px; font-size: 25px;" class="forms" href="https://CCCProo.github.io/naschiotsaita.html ">
+
+
+НАСЧЁТ САЙТА
+ 
+</a><br> <a  style="padding: 1px; font-size: 25px;" href="https://CCCProo.github.io/naschiotsaita.html"><img class="img1" src="https://images.chesscomfiles.com/uploads/v1/news/1038401.a735aa01.668x375o.dcc7ddd76f3b@2x.jpeg" width="668" height="375"></a></center><p class="avtorform">Автор: SusAmogus228
+</p>
+</div><br>
+
+
+<div class="formnew">
+  <center><a  style="padding: 1px; font-size: 25px;" class="forms" href="segodniaprazdnuetsvoidenrozhdeniiagrossmeisternikitavitiugov.html">
+
+Сегодня празднует свой день рождения, гроссмейстер Никита Витюгов!
+ 
+</a><br> <a  style="padding: 1px; font-size: 25px;" href="segodniaprazdnuetsvoidenrozhdeniiagrossmeisternikitavitiugov.html"><img class="img1" src="img16.jpeg" width="600" height="375"></a></center><p class="avtorform">Автор: Russian_Mithrandir
+</p>
+</div><br><div class="formnew">
+  <center><a  style="padding: 1px; font-size: 25px;" class="forms" href="skoro.html">Форум:Скоро...</a></center><p class="avtorform">Автор: SusAmogus228</p>
+</div><br>
+<div class="formnew">
+  <center><a  style="padding: 1px; font-size: 25px;" class="forms" href="FisherbezslonaprotivMikhailaTalyavendshpile.html">Новость:Фишер без слона против Михаила Таля в эндшпиле</a><br> <a href="FisherbezslonaprotivMikhailaTalyavendshpile.html"><img class="img1" src="img3.jpeg"></a></center><p class="avtorform">Автор: SusAmogus228</p>
+</div><br>
+<div class="formnew">
+  <center><a  style="padding: 1px; font-size: 25px;" class="forms" href="Masterasygralipochtipokhozhuyupartiyu.html">Новость:Мастера сыграли почти похожую партию!</a><br> <a href="Masterasygralipochtipokhozhuyupartiyu.html"><img class="img1" src="img4.jpeg" width="668" height="375"></a></center><p class="avtorform">Автор: SusAmogus228</p>
+</div><br>
+
+    
+   
+   
+
+      </main>
+    <script>
+/* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+  </div>
+ </body>
+ </html>

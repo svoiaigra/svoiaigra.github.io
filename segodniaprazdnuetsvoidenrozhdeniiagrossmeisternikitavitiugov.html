@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Своя Игра(Новости)</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet"> 
+    <style>
+      *{
+          margin: 0 auto;
+        }
+
+
+      #navbar ul{
+        display: none;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+      }
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 35px;
+        background-color: black;
+        padding-left: 25px;
+        min-width: 470px;
+      }
+      #navbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 23px;
+
+      }
+
+      .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    .rgb{
+      width: 100%;
+      height: 500px;
+      background: linear-gradient(#ff0000, #9932cc) fixed;
+      box-shadow: 0 0 50px 3px rgba(202,113,68);
+      text-decoration: none;
+    }
+}
+
+abbr{
+  text-decoration: none;
+}
+
+    .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+.formnew{
+  background: #ebd2c3;
+  width: 70%;
+  border-radius: 10px
+
+}
+
+.avtorform{
+  padding-left:75%;
+
+}
+
+.forms{
+  text-decoration: none;
+  color: black;
+}
+.img1{
+  border-radius: 30px
+}
+
+.comment{
+  padding-left: 10px;
+}
+
+.name{
+  display: inline-block;
+ 
+}
+
+.news1{
+    font-size: 30px
+}
+
+
+.avtornews{
+    margin-left: 1%;
+    background: #ebd2c3;
+    border-radius: 10px;
+    width: ;
+}
+
+
+.img1{
+  margin-left: 1%;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  
+}
+
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+  display: none;
+ 
+}
+
+/* Добавление стилей в контейнер форм */
+.form-container {
+  width: 250px;
+position: absolute;
+  height: 145px;
+  background:linear-gradient(#e6a283, #ffe4e1);
+  border-radius: 10px;
+}
+
+.btn{
+  margin-top: 1%;
+  margin-left: 72%
+}
+
+.p2{
+  margin-left: 10px;
+  margin-top: 2px;
+}
+    </style>
+  </head>
+
+
+ 
+  <body >
+  <div class="sticky">
+  <img src="img1.png" width="50px" height="30" style="position: absolute; left: 1px; padding-left:2px; ">
+    <ul id="navbar">
+      <li><a style="position: relative; z-index: -1;">||||</a></li>
+       <li><a href="index.html">Главная</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="#">Контакты</a>
+        <ul>
+          <li><a href="https://chess.com/member/SusAmogus228">Создатель сайта</a></li>
+          <li><a href="https://www.chess.com/member/russian_mithrandir">Создатель клуба</a></li>
+          <li><a href="mailto:svoiaigra1@yandex.ru">Написать нам</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.chess.com/club/svoia-igra">Клуб</a></li> 
+    
+    </ul>
+ </div >
+   <br><div class="rgb">
+  <img src="index.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute; display: flex;left:500px;right:140px; top: 300px;"><img src="index.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute; display: flex;left:500px;right:140px; top: 300px;">
+  <img src="img10.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute; display: flex;left:1000px;right:140px; top: 330px;"><img id="logo" style="padding-left:200px; padding-top: 200px; margin: 0 auto;"  src="img1.png"> 
+  <img src="img9.png" id="pawn" class="Rook animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="120px" height="100px"style="position:absolute; display: flex;left:750px;right:140px; top: 150px;">
+
+  <br><a href="" style="padding-left: 230px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" ><abbr title="Само название клуба">"Своя игра"</abbr></a>
+  <br><a href="" style="padding-left: 340px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" >Турниры</a>
+   <br><a href="" style="padding-left: 430px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" >Турниры</a>
+
+
+
+
+
+
+
+   
+   </div >
+  <main>
+    <div>
+  
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Быстрый поиск</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="news.html">Новости</a>
+    <a href="forms.html">Форумы</a>
+    
+  </div>
+</div>
+
+<div class="formnew">
+  <br><center><img src="img16.jpeg" width="600" height="375"></center>
+<br><center><p class="news1">
+Сегодня празднует свой день рождения, гроссмейстер Никита Витюгов!
+</p></center><div class="avtornews">
+  
+  <img class="img1" src="img7.jpeg">
+<button class="open-button" onclick="openForm()"> Russian_Mithrandir </button>
+
+<div class="form-popup" id="myForm">
+  <form action="../action_page.php" class="form-container">
+   <p class="p2">Инфа:</p>
+   <p class="p2">"Ник:  Russian_Mithrandir </p>
+   <p class="p2">Зарегистрирован: 12 янв. 2022 г.
+
+ </p>
+ <p class="p2">Страна:Русский</p>
+ <p class="p2">Для сайта он: участник</p>
+<p class="p2">В клубе:создатель"</p>
+    
+    <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+  </form>
+</div>
+</div><br></div >
+<br>
+
+
+
+
+<div class="formnew">
+ <br><center> <p>Хочу от лица членов нашего клуба, поздравить с днём рождения, с 35-летием,  действующего чемпиона России, гроссмейстера Никиту Витюгова, также являющегося помимо гроссмейстером, автором книг и тренером по шахматам, также фанатом футбола.</p><br>
+
+  <br><br><p>Никита Витюгов - российский гроссмейстер родом из Санкт-Петербурга, чемпион России в 019 году, двукратный победитель командного чемпионата мира, многократный обладатель клубного кубка Европы и победитель командного чемпионата России, первый призер турниров в Гибралтаре, Карлсруэ и Праге, тренер и автор книг о шахматах.</p><br>
+  <p>Желаем ему долгих лет жизни, здоровья, успеха в жизни!
+</p>
+
+<p>Витюгов узнал правила шахмат в пять лет. Его первый тренер - ММ Алексей Юнеев. В 2005 году Витюгов стал чемпионом России до 18 лет. В 2006 году он стал международным мастером и разделил с Юрием Криворучко второе-третье место на чемпионате мира до 20 лет, отстав на пол-очка от Завена Андриасяна. В 2007 году он получил звание гроссмейстера.</p><br>
+<p>В 2010 году Витюгов вместе со сборной России стал победителем командного чемпионата мира, показав на второй запасной доске прекрасный результат 5,5/6. В 2013 году Витюгову и сборной России вновь удалось завоевать золото командного чемпионата мира. </p><br>
+<p>В марте 2010 года рейтинг гроссмейстера преодолел отметку 2700 баллов Эло. С тех пор Витюгов входит в число сильнейших шахматистов мира. Его максимальный рейтинг на сегодняшний день - 2751 балл Эло в декабре 2019 года.</p><br>
+<p>В 2013 году Витюгов разделил с Максимом Вашье-Лагравом, Чандой Садипаном и Найджелом Шортом первое место на турнире в Гибралтаре (по 8/10) и победил соперников на тай-брейке.
+</p><br>
+<img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/Russian_Mithrandir/phpat20uQ.jpeg" width="328px;" height="499,8585"><br>
+<p>В 2013, 2016, 2019, 2020 и 2021 годах Витюгов становился победителем командного чемпионата России, а в 2011, 2019 и 2021 годах выигрывал клубный кубок Европы,  выступая за команды из Санкт-Петербурга.</p><br>
+<p>В суперфинале чемпионата России-2017, проходившем в Санкт-Петербурге, Витюгов набрал по 7/11 с Петром Свидлером, но уступил земляку на тай-брейке. Ранее он трижды - в 2009, 2013 и 2015 годах - становился бронзовым призером.</p><br>
+<p>В 2017 году Витюгов занял первое место на открытом турнире в Карлсруэ, а 2018 году  разделил с Вашье-Лагравом и Левоном Арояном третье место на супертурнире в Карлсруэ/Баден-Бадене.</p><br><br><br>
+
+<center><iframe id="8922767" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=8922767"></iframe><script>window.addEventListener("message",e=>{e['data']&&"8922767"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script></center>
+<img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/Russian_Mithrandir/phpdWRH1P.jpeg" width="432" height="321,55"><br>
+<p>Никита Витюгов в 2018 году. | Фотография Эрика ван Рема.</p><br>
+<p>В марте 2019 года он занял первое место в главном турнире фестиваля шахмат в Праге  с результатом 5,5/9, обогнав на пол-очка Видита Гуджрати, Радослава Войташка, Яна-Кшиштофа Дуду и Бориса Гельфанда.</p><br>
+<p>В том же году Витюгов успешно выступил на Кубке мира в Ханты-Мансийске, победив в мини-матчах Сергея Карякина и Уэсли Со, но уступил в четвертьфинале Юй Янъи.</p><br>
+
+<center><iframe id="8922779" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=8922779"></iframe><script>window.addEventListener("message",e=>{e['data']&&"8922779"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script></center><br><br><br>
+<img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/Russian_Mithrandir/phpU1QHRb.jpeg" width="400px" height="300px"><br>
+<p>В 2021 году на Суперфинале в Уфе Витюгов, ранее 15 раз участвовавший в чемпионатах России, наконец, занял первое место с результатом 7/11, опередив на пол-очка Максима Матлакова и на очко - Андрея Есипенко, Дмитрия Андрейкина и  Владимира Федосеева.</p>
+<center><iframe id="8922785" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=8922785"></iframe><script>window.addEventListener("message",e=>{e['data']&&"8922785"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script></center><br><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DXfZ9wwve-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<br><br><br>
+</div>
+</main><br>
+    <script>
+/* Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+  </div>
+ </body>
+ </html>
+<main action=""></main>

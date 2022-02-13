@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Своя Игра(Форумы)</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet"> 
+    <style>
+      	*{
+      		margin: 0 auto;
+      	}
+
+
+      #navbar ul{
+        display: none;
+        background-color: black;
+        position: absolute;
+        top: 100%;
+      }
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 35px;
+        background-color: black;
+        padding-left: 25px;
+        min-width: 470px;
+      }
+      #navbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 23px;
+
+      }
+
+      .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    .rgb{
+    	width: 100%;
+    	height: 500px;
+    	background: linear-gradient(#ff0000, #9932cc) fixed;
+    	box-shadow: 0 0 50px 3px rgba(202,113,68);
+    	text-decoration: none;
+    }
+}
+
+abbr{
+  text-decoration: none;
+}
+
+    .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+.formnew{
+  background: #ebd2c3;
+  width: 70%;
+  border-radius: 10px
+
+}
+
+.avtorform{
+  padding-left:75%;
+}
+
+.forms{
+  text-decoration: none;
+  color: black;
+}
+.img1{
+  border-radius: 30px
+}
+
+.comment{
+  padding-left: 10px;
+}
+
+.name{
+  display: inline-block;
+   margin-left: 10px;
+}
+
+.otvet{
+  background: #cccccc;
+  height: 3%;
+  width: 58%;
+  border-radius: 10px
+}
+
+
+#line_block { 
+      
+        background:linear-gradient(#ff0000, #9932cc); 
+         
+        margin: 15px 5px 10px 0; 
+        text-align:center;
+        padding: 5px;
+        border:2px solid #0000 ; 
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 20px 10px 5px 0;
+        }
+
+.pe{
+  padding-left: 71%
+}
+
+.line_block1{
+ cursor: no-drop;, auto;
+ text-decoration: none;
+}
+.line_block{
+  text-decoration: none;
+  color: black;
+}
+    </style>
+ </head>
+
+
+ 
+  <body >
+  <div class="sticky">
+  <img src="img1.png" width="50px" height="30" style="position: absolute; left: 1px; padding-left:2px; ">
+    <ul id="navbar">
+       <li><a href="index.html">Главная</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Контакты</a>
+        <ul>
+          <li><a href="#">Адрес</a></li>
+          <li><a href="#">Телефон</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+      </li>
+      <li><a href="#">О нас</a></li> 
+    
+    </ul>
+ </div >
+   <br><div class="rgb">
+  <img src="index.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute;left:500px;right:140px; top: 300px;"><img src="index.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute;left:500px;right:140px; top: 300px;">
+  <img src="img10.png" id="pawn" class="Qween animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="100px" height="100px"style="position:absolute;left:1000px;right:140px; top: 330px;"><img id="logo" style="padding-left:200px; padding-top: 200px; margin: 0 auto;"  src="img1.png"> 
+  <img src="img9.png" id="pawn" class="Rook animete__animation animate__bounceInLeft" id="revealator-slideleft revealator-once revealator-below" width="120px" height="100px"style="position:absolute;left:750px;right:140px; top: 150px;">
+
+  <br><a href="" style="padding-left: 230px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" ><abbr title="Само название клуба">"Своя игра"</abbr></a>
+  <br><a href="" style="padding-left: 340px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" >Турниры</a>
+   <br><a href="" style="padding-left: 430px; text-decoration: none;font-family: 'Montserrat Alternates', sans-serif; font-size: 30px; color:black ;" >Турниры</a>
+
+</script>
+
+
+
+   
+   </div >
+  <main>
+    <div>
+  
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Быстрый поиск</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="news.html">Новости</a>
+    <a href="forms.html">Форумы</a>
+    
+  </div>
+</div>
+
+<div class="formnew">
+    <center><p>ВНИМАНИ МЫ НЕ ОБЕЩАЕМ ТО ЧТО ВСЕ КОМЕНТАРИ БУДУТ ВЫВОДИТСЯ СЮДА, ТАК ЧТО ИЗВЕНИТЕ!!!</p></center>
+  </div><br><div class="formnew">
+    <center><p>ВНИМАНИ АВАТАРКИ ОБНОВЛЯТЬСЯ НЕ БУДУТ! ЕСЛИ ВЫ ИХ ПОМЕНЯЛИ ТО МЫ НЕ МЕНЯЕМ ИХ! ИЗВЕНИТЕ!!!</p></center>
+  </div>
+  <br><br><div class="formnew">
+   <center> <br><p>Форум: Скоро...</p><br></center>
+  </div> <br>
+
+  
+
+<div class="formnew"> 
+  <div class="comment">
+    <br><img src="img7.jpeg"><p class="name">Russian_Mithrandir
+</p><br>
+    <center><p class="name1">
+
+
+
+Новость по этому поводу уже опубликовали, так что...
+</p><br></center>
+  </div><hr>
+  
+
+  <div class="comment">
+    <br><img src="img8.jpeg"><p class="name">KausovIvan
+</p><br>
+    <center><p class="name1">
+
+
+
+даааааа??????
+</p><br></center>
+  </div><hr>
+
+  <div class="comment">
+    <br><br><img src="img.10.jpeg"><p class="name">SusAmogus228
+</p><br>
+    <center><p>
+<div class="otvet"> KausovIvan написал:   <br>
+
+
+
+это сайт?
+
+
+
+</div>
+</p><br><p class="name1">
+
+поздно ты не получишь</p><br></center>
+  </div><hr>
+
+
+  <div class="comment">
+    <br><img src="img7.jpeg"><p class="name">Russian_Mithrandir
+</p><br>
+    <center><p class="name1">
+
+
+
+
+
+Даааа...
+</p><br></center>
+  </div><hr>
+
+
+<div class="comment">
+    <br><br><img src="img8.jpeg"><p class="name">KausovIvan
+</p><br>
+    <center><p>
+<div class="otvet">  SusAmogus228 написал:    <br>
+
+
+
+поздно ты не получишь
+
+
+
+</div>
+</p><br><p class="name1">
+
+почему позно ответ уже сказали?</p><br></center>
+  </div><hr>
+
+<div class="comment">
+    <br><img src="img12.jpeg"><p class="name">tihon24082012
+
+</p><br>
+    <center><p class="name1">
+
+да сказали
+</p><br></center>
+  </div><hr>
+
+
+
+<div class="comment">
+    <br><img src="img7.jpeg"><p class="name">Russian_Mithrandir
+</p><br>
+    <center><p class="name1">
+
+
+
+
+
+Да!
+</p><br></center>
+  </div><hr>
+
+<div class="comment">
+    <br><img src="img8.jpeg"><p class="name">KausovIvan
+</p><br>
+    <center><p class="name1">
+
+
+
+
+эх не повезло оказывается уже сказали( а я угодал?
+
+</p><br></center>
+  </div><hr>
+<div class="comment">
+    <br><br><img src="img.10.jpeg"><p class="name">SusAmogus228
+</p><br>
+    <center><p>
+<div class="otvet"> KausovIvan написал:   <br>
+
+
+
+
+
+эх не повезло оказывается уже сказали( а я угодал?
+
+
+
+
+</div>
+</p><br><p class="name1">
+
+то что ты сказал да но не вовремя и сайт можно спросить в лс и не факт что я его дам </p><br></center>
+  </div><hr>
+</div>
+
+<div class="pe"><div id="line_block">
+  <a class="line_block" href="skoro.html"><</p>
+</div><div id="line_block">
+  <a class="line_block" href="skoro.html">1</a>
+</div>
+<div id="line_block">
+  <a class="line_block" href="skoro1.html">2</a>
+</div>
+<div id="line_block">
+  <p class="line_block1" >></p>
+</div>
+<div id="line_block">
+  <a class="line_block" href="skoro1.html">Последние</a>
+</div>
+
+</div>
+</main>
+</body>
+</html>
